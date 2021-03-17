@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+:root {
+  --main-color: rgb(11, 122, 85);
+  --main-darker: rgb(11, 88, 63);
+  --secondary-color: rgb(40, 40, 85);
+}
+
+body {
+  background: #d0e4e3;
+  margin: 0;
+  font-family: 'Rubik';
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.header {
+  background: white;
+  padding: 1em;
+}
+
+.header .mobilemenu {
+  cursor: pointer;
+}
+
+.header .ivo {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 1.4em;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.header nav {
+  display: none;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.left-wel p {
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+.left-wel .resume-button {
+  background: var(--main-color);
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: .7em .7em;
+  border-radius: 3em;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.welcome-img {
+  margin-top: 3em;
+  width: 80%;
+}
+
+.About-me {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.About-me p {
+  font-size: 1.3em;
+  line-height: 1.6;
+  margin: 1em 1em 1em 1em;
+}
+
+.About-me h1 {
+  font-size: 1.8em;
+  padding-left: .8em;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+
+.Works {
+  background: var(--main-color);
+  color: white;
+}
+
+.Works h1 {
+  font-size: 2em;
+  margin-bottom: 3em;
+  font-weight: bold;
+  padding-left: .5em;
+}
+
+.Works li {
+  background: var(--main-darker);
+  margin: 0 auto 4em auto;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.Works li p {
+  margin-bottom: 1em;
+  margin-top: .5em;
+}
+
+.Works li img {
+  width: 6em;
+  height: 6em;
+  margin-top: -2.5em;
+}
+
+.contact {
+  margin-top: -2em;
+  margin-bottom: -2em;
+}
+
+.contact h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.contact ul {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.contact ul li {
+  margin-bottom: 1em;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--secondary-color);
+  height: 100vh;
+  padding: 1.2em;
+}
+
+nav ul.first-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  margin-top: 1.3em;
+  display: block;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-e-m {
+  float: right;
+  cursor: pointer;
+  margin: .5em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobilemenu, .mobile-e-m {
+    display: none;
+  }
+  .header .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background: none;
+  }
+  .header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header nav a {
+    color: black;
+    font-size: 1em;
+    padding: .2em 1em;
+  }
+  .header nav ul.first-nav {
+    margin: 0;
+  }
+  .header nav li.Current-page a {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .grow {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .grow:hover {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  section {
+    padding: 9em 3em;
+  }
+  .welcome .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .welcome .container .left-wel {
+    margin-top: 11em;
+    margin-right: .9em;
+  }
+  .welcome-img {
+    width: 90%;
+  }
+  .Works ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Works ul li {
+    margin: 0 1em;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .About-me:before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--main-color);
+    right: 0;
+    top: 49em;
+  }
+  .About-me:after {
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 10em;
+    background: var(--main-darker);
+    right: 9em;
+    top: 54.2em;
+  }
+  .Works:before {
+    content: '';
+    position: absolute;
+    width: 8%;
+    height: 25em;
+    background: var(--secondary-color);
+    left: 0;
+    top: 110em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

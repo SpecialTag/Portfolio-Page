@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivo's Portfolio</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class= "ivo" href="index.html"> IVO</a>
+
+            <img id="mobile-screen" class="mobilemenu" src="images/menu.svg" alt="Open navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-e-m" src="./images/x-circle-white.svg" alt="close navigation">
+                <ul class="first-nav">
+                    <li class="Current-page"><a href="#">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#worksection">Works</a></li>
+                </ul>
+
+                <ul class="second-nav">
+                    <li><a href="#contactme">Contact Me</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <div class="container">
+                <div class="left-wel">
+                    <p>Have you been searching for a developer to meet all your needs and criteria? 
+                       you don't need to keep on searching, i'm here. 
+                    </p>
+                    <div class="welcome-b">
+                        <a href="#" class="resume-button">Resume!</a>
+                    </div>
+                </div>
+               
+                <img src="https://via.placeholder.com/220x250.png " class="welcome-img" alt="Profile photo">
+            </div>
+        </section>
+
+        <section id="aboutme" class="About-me">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>
+                    Hello there, my name is Ivo Flores Hinojosa, i'm currently 19 years old and 
+                    i'm not exactly sure about what i have to put in here right now, i know it has to be
+                    something professional sounding, but well... i was a student in a university, i didn't
+                    have the need for sounding professional, at least i will say my current skills:
+                    i know how to play the guitar, bass, violin, viola, cello, piano and basson, i make
+                    electronic music, i did an IT certificate from google, i am currently a music teacher for an
+                    elementary and middle school and i have started to learn about 3d modelling and art (i was
+                    studying animation) 
+                </p>
+            </div>
+        </section>
+
+        <section id="worksection" class="Works">
+            <div class="container">
+                <h1>Works</h1>
+                <ul>
+                    <li class="grow">
+                        <img src="https://via.placeholder.com/3120.png " alt="future projects"> 
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>  
+                    </li>
+                    <li class="grow">
+                        <img src="https://via.placeholder.com/320.png" alt="future projects">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                    </li>
+                    <li class="grow">
+                        <img src="https://via.placeholder.com/320.png" alt="future projects">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                    </li>
+                    <li class="grow">
+                        <img src="https://via.placeholder.com/320.png" alt="future projects">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contactme" class="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <ul>
+                    <li>Email: ivoflores85@gmail.com</li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Github</a></li>
+                    <li>Phone Number: 44 43 34 12 63</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-screen')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');  
+
+            mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+            mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>
