@@ -102,6 +102,7 @@ section{
    
 }
 
+//works section------------------------------
 .Works{
     background: var(--main-color);
     color: white;
@@ -132,6 +133,7 @@ section{
     }
 }
 
+//contact section-------------------------------------
 .contact{
     margin-top: -2em;
     margin-bottom: -2em;
@@ -153,6 +155,7 @@ section{
     }
 }
 
+//nav--------------------------------------
 nav{
     position: fixed;
     z-index: 999;
@@ -193,12 +196,12 @@ nav.menu-btn{
     display: block;
 }
 
-
+//dont put grow in phone mode, it looks ugly and kinda breaks the page
 
 
 @media only screen and (min-width: 768px) {
 
-    .mobilemenu, .mobile-e-m {
+    .mobilemenu, .mobile-e-m {  //dont remove the coma, it breaks if it isnt there, dont know why
         display: none;
     }
 
@@ -307,7 +310,7 @@ nav.menu-btn{
     }
 
     .Works{
-        &:before {
+        &:before { //also decorations
             content: '';
             position: absolute;
             width: 8%;
